@@ -1,6 +1,6 @@
 # The-book-of-Mathematics
 
-In Termainal -
+In Terminal -
 
 npm install
 
