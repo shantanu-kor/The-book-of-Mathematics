@@ -5,7 +5,7 @@ import classes from './Calculator.module.css';
 const Calculator = () => {
     const [expression, setExpression] = useState("");
     const expressionRef = useRef();
-    const set = new Set(["*", "/", "-", "+", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"])
+    const set = new Set(["*", "/", "-", "+", , "(", ")","1", "2", "3", "4", "5", "6", "7", "8", "9", "0"])
 
     const changeExpressionHandler = () => {
         setExpression(expressionRef.current.value);
