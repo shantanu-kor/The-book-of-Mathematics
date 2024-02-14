@@ -1,0 +1,16 @@
+.h3 {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.calculatorDiv {
+    text-align: center;
+    width: 720px;
+    height: 940px;
+    margin: 50px;
+    color: black;
+    background-color: #8F8F8F;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -25px -25px 20px -5px grey;
+}

@@ -1,0 +1,27 @@
+h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.nav {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+.link {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 30%;
+    margin: 10px;
+}
+
+.link:hover {
+    color: aquamarine;
+}
+.link:active {
+    color: aqua;
+}
