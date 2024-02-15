@@ -5,7 +5,7 @@ import classes from './Calculator.module.css';
 const Calculator = () => {
     const [expression, setExpression] = useState("");
     const expressionRef = useRef();
-    const set = new Set(["*", "/", "-", "+", , "(", ")","1", "2", "3", "4", "5", "6", "7", "8", "9", "0"])
+    const set = new Set(["*", "/", "-", "+", ".", "e", "(", ")","1", "2", "3", "4", "5", "6", "7", "8", "9", "0"])
 
     const changeExpressionHandler = () => {
         setExpression(expressionRef.current.value);
@@ -70,6 +70,10 @@ const Calculator = () => {
         event.preventDefault();
         setExpression(prevState => prevState + "**");
     };
+    const onClickDecimalHandler = (event) => {
+        event.preventDefault();
+        setExpression(prevState => prevState + ".");
+    };
     const onClickLeftHandler = (event) => {
         event.preventDefault();
         setExpression(prevState => prevState + "(");
@@ -77,6 +81,15 @@ const Calculator = () => {
     const onClickRightHandler = (event) => {
         event.preventDefault();
         setExpression(prevState => prevState + ")");
+    };
+
+    const onClickDeleteHandler = (event) => {
+        event.preventDefault();
+        setExpression("");
+    };
+    const onClickBackHandler = (event) => {
+        event.preventDefault();
+        setExpression(prevState => prevState.substring(0, prevState.length-1));
     };
 
     const onSubmitHandler = (event) => {
@@ -164,6 +177,17 @@ const Calculator = () => {
                     </td>
                     <td>
                         <button type="button" onClick={onClickRightHandler}>{')'}</button>
+                    </td>
+                    <td>
+                        <button type="button" onClick={onClickDecimalHandler}>.</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onClick={onClickDeleteHandler}>{'C'}</button>
+                    </td>
+                    <td>
+                        <button type="button" onClick={onClickBackHandler}>{<img src="backspace.png" alt="<=" />}</button>
                     </td>
                     <td>
                         <button type="submit">=</button>

@@ -7,9 +7,9 @@
     border: 2px solid black;
 }
 .numButtonTable td{
-    height: 100px;
+    height: 70px;
     width: 225px;
-    font-size: 79px;
+    font-size: 67px;
     border: 2px solid white;
 }
 .numButtonTable td:hover{
@@ -22,6 +22,11 @@
     margin-bottom: 10px;
 }
 .numButtonTable button {
-    height: 100px;
+    height: 70px;
     width: 225px;
+}
+.numButtonTable button img {
+    position: relative;
+    top: 13%;
+    left: 35%;
 }
