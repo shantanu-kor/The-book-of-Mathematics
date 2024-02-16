@@ -109,7 +109,7 @@ const Calculator = () => {
             ans = expression;
             alert("Invalid Expression!")
         }
-        setExpression(ans);
+        setExpression(String(ans));
     };
 
     return (
