@@ -4,8 +4,9 @@ h2 {
     font-weight: bold;
 }
 .nav {
+    display: flex;
+    justify-content: center;
     color: white;
-    text-align: center;
     font-weight: bold;
     padding: 15px;
 }
